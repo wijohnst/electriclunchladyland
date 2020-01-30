@@ -1,0 +1,58 @@
+#logo-wrapper{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  /* background: lightgreen; */
+  display: grid;
+  width: max-content;
+  grid-template-columns: auto;
+  grid-auto-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "e l_1 ectric"
+  ". l_2 unch"
+  ". l_3 ady"
+  ". l_4 and";
+}
+
+#e{
+  grid-area: e;
+  text-align: right;
+}
+
+.l{
+  font-size: 2em;
+  /* background: lightpink; */
+}
+
+#l_1{
+  grid-area: l_1;
+}
+
+#f{
+  /* background: red; */
+  grid-area: ectric;
+  justify-self: start;
+}
+
+#l_2{
+  grid-area: l_2;
+}
+
+#unch{
+  grid-area: unch;
+}
+
+#l_3{
+  grid-area: l_3;
+}
+
+#ady{
+  grid-area: ady;
+}
+
+#l_4{
+  grid-area: l_4;
+}
+
+#and{
+  grid-area: and;
+}

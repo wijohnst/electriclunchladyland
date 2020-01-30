@@ -1,0 +1,7 @@
+#boxes-wrapper{
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fill, 150px);
+  grid-template-rows: 1fr;
+  padding: 15px;
+}

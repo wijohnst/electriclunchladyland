@@ -1,0 +1,12 @@
+.header-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  height: 150px;
+  width: 150px;
+}
+
+.header-box:hover{
+  color: black;
+}
