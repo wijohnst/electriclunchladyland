@@ -4,9 +4,16 @@ import React from "react"
 // import PrintLogo from "./printLogo"
 import HeaderBoxes from "./headerBoxes"
 
-const Header = ()=> {
- return(
-   <HeaderBoxes />
+const Header = ({backgroundColor, handleView})=> {
+  
+  let style = {
+    backgroundColor: `${backgroundColor}`
+  }
+
+  return(
+   <div style={style}>
+   <HeaderBoxes handleView={handleView}/>
+   </div>
  )
 }
 

@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import './headerBox.css';
  
-
-
-const HeaderBox = ({color, index}) => {
+const HeaderBox = ({color, index, handleView}) => {
 
   const [hover, setHover] = useState(false);
   
@@ -18,8 +16,8 @@ const HeaderBox = ({color, index}) => {
     setHover(false);
   }
 
-  const navigate = (e) =>{
-    console.log(e.target.value);
+  const handleClick = (text) =>{
+    handleView(text.text);
   }
   
   if(hover === false){
@@ -41,23 +39,27 @@ const HeaderBox = ({color, index}) => {
 
   switch(index){
     
-    case(2):
+    case(1):
     text = "EL3 Consultants";
     break;
 
-    case(4):
+    case(3):
     text = "ChefSuite"
     break;
 
-    case(6):
+    case(5):
     text = "About"
+    break;
+
+    case(7):
+    text = "Contact"
     break;
 
     default:
     text=""
   }
   return (
-    <div className="header-box" value={text} style={style} onMouseOver={setHoverTrue} onMouseLeave={setHoverFalse} onMouseDown={navigate}> 
+    <div className="header-box" style={style} onMouseOver={setHoverTrue} onFocus={setHoverTrue} onMouseLeave={setHoverFalse} onClick={ () => handleClick({text})}> 
       {text}
     </div>
   );
