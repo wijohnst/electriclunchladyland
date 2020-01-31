@@ -1,10 +1,16 @@
 import React from 'react'
 import './ViewArea.css'
-
-function ViewArea() {
+import Heading from './Heading.js'
+import ViewHandler from './ViewHandler'
+function ViewArea({headingText}) {
   return (
     <div id="view-area-wrapper">
-      ViewArea
+      <div id="heading-wrapper">
+        <div id="heading">
+          <Heading headingText={headingText} />
+        </div>
+      <ViewHandler />
+      </div>
     </div>
   )
 }

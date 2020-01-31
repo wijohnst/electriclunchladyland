@@ -59,7 +59,7 @@ const IndexPage = () => {
   return(
   <div style={style}>
     <Layout handleView={handleView} />
-    <ViewArea />
+    <ViewArea headingText={heading}/>
   </div>
   
   )

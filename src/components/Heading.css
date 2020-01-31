@@ -1,0 +1,8 @@
+#heading-text-wrapper{
+  /* background: lightpink; */
+}
+
+#heading-text{
+  font-size: 24pt;
+  text-shadow: 1px 5px 5px #707070;
+}
