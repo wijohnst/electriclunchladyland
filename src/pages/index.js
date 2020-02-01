@@ -12,13 +12,12 @@ const IndexPage = () => {
   const aboutColor = 'rgb(227,200,179)';
   const contactColor = 'rgb(255,200,179)';
 
-  
-
   const [viewName, setViewName] = useState('index');
   const [bgColor, setBgColor] = useState('white');
   const [heading, setHeading] = useState('Welcome');
   
-  let style = {
+  let style = { //Acts as global styling
+    transition: `all 0.5s`,
     backgroundColor: `${bgColor}`
   }
   
@@ -57,7 +56,7 @@ const IndexPage = () => {
   })
 
   return(
-  <div style={style}>
+  <div id="app-wrapper" style={style}>
     <Layout handleView={handleView} />
     <ViewArea headingText={heading}/>
   </div>
