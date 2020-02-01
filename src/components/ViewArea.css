@@ -1,0 +1,18 @@
+#view-area-wrapper{
+  font-family: "Montserrat", sans-serif; 
+  /* Pass font as a prop and set via CSS-in-JS or query via GraphQL?*/
+  width: 100vw;
+  height: 100vh;
+  padding: 10px;
+}
+
+#heading-wrapper{
+  display: grid;
+  grid-template-columns: repeat(6 1fr);
+  grid-template-areas: 
+  ". . . . heading .";
+}
+
+#heading{
+  grid-area: heading;
+}

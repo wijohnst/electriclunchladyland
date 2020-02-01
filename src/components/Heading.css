@@ -1,0 +1,9 @@
+#heading-text-wrapper{
+  padding: 5px;
+}
+
+#heading-text{
+  font-size: 36pt;
+  color: white;
+  text-shadow: 1px 5px 5px #707070;
+}
