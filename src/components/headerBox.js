@@ -24,13 +24,13 @@ const HeaderBox = ({color, index, handleView}) => {
     style = {
       transition: "all 0.3s",
       backgroundColor: `rgb(${color},200,179)`,
-      color: `rgb(${color},200,179)`
+      color: `#707070`
     }
   }else{
     style = {
       transition: "all 0.3s",
       backgroundColor: `rgb(${color},200,179)`,
-      color: "#707070",
+      color: "white",
       cursor: "pointer"
     }
   }
