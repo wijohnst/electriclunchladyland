@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { Children } from 'react'
 import "./ViewHandler.css"
 
-export default function ViewHandler() {
-  return (
-    <div>
-      
-    </div>
-  )
+export default function ViewHandler(props) {
+      return (
+        <div className={'ViewHandler'}>
+          {Children}
+        </div>
+      )
 }
