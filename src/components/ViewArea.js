@@ -2,7 +2,8 @@ import React from 'react'
 import './ViewArea.css'
 import Heading from './Heading.js'
 import ViewHandler from './ViewHandler'
-function ViewArea({headingText}) {
+
+export default function ViewArea({headingText}) {
   return (
     <div id="view-area-wrapper">
       <div id="heading-wrapper">
@@ -15,4 +16,3 @@ function ViewArea({headingText}) {
   )
 }
 
-export default ViewArea

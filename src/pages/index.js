@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react"
 
 import Layout from "../components/layout"
 import ViewArea from "../components/ViewArea"
-
+import WelcomeView from "../components/WelcomeView"
 
 const IndexPage = () => {
 
@@ -16,7 +16,7 @@ const IndexPage = () => {
   const [viewName, setViewName] = useState(`index`); //updates @ <Headerbox />
   const [bgColor, setBgColor] = useState(`white`); //updates @ useEffect 
   const [heading, setHeading] = useState(`WELCOME`); //updates @ useEffect
-  const [viewWrapper, setViewWrapper] = useState(`<WelcomeView />`);  //updates @ useEffect
+  // const [viewWrapper, setViewWrapper] = useState([<WelcomeView />]);  //updates @ useEffect
   
   let style = { //Global Styling set here and passed to #app-wrapper 
     transition: `all 0.5s`,
@@ -33,33 +33,34 @@ const IndexPage = () => {
         default:
           setBgColor('white')
           setHeading('WELCOME')
-          setViewWrapper(`<WelcomeView />`)
+          // setViewWrapper(`<WelcomeView />`)
           break;
         case 'EL3 Consultants':
           setBgColor(el3Color)
-          setHeading(viewName.toUpperCase())
+          setHeading(viewName)
           break;
         case 'ChefSuite':
           setBgColor(chefSuiteColor)
-          setHeading(viewName.toUpperCase())
+          setHeading(viewName)
           break;
         case 'About':
           setBgColor(aboutColor)
-          setHeading(viewName.toUpperCase())
+          setHeading(viewName)
           break;
         case 'Contact':
           setBgColor(contactColor)
-          setHeading(viewName.toUpperCase())
+          setHeading(viewName)
           break;
         case 'index':
-          setHeading('Welcome')
+          setHeading('WELCOME')
+          break;
     }
   })
 
   return(
   <div id="app-wrapper" style={style}>
     <Layout handleView={handleView} />
-    <ViewArea headingText={heading} viewWrapper={viewWrapper} />
+    <ViewArea headingText={heading}  />
   </div>
   
   )
