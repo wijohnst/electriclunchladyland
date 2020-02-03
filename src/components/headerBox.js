@@ -57,13 +57,13 @@ const HeaderBox = ({color, index, handleView}) => {
 
     default:
     text=""
+    break;
   }
   return (
-    <div className="header-box" style={style} onMouseOver={setHoverTrue} onFocus={setHoverTrue} onMouseLeave={setHoverFalse} onClick={ () => handleClick({text})}> 
+    <div role="button" className="header-box" style={style} onMouseOver={setHoverTrue} onFocus={setHoverTrue} onMouseLeave={setHoverFalse} onClick={ () => handleClick({text})} onKeyPress={ () => handleClick({text})} tabIndex={0} > 
       {text}
     </div>
   );
 }
-
 
 export default HeaderBox;

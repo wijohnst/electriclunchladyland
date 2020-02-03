@@ -17,12 +17,4 @@ const Header = ({backgroundColor, handleView})=> {
  )
 }
 
-// Header.propTypes = {
-//   siteTitle: PropTypes.string,
-// }
-
-// Header.defaultProps = {
-//   siteTitle: ``,
-// }
-
 export default Header

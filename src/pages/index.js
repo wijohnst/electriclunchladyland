@@ -4,10 +4,10 @@ import React, { useState, useEffect } from "react"
 
 import Layout from "../components/layout"
 import ViewArea from "../components/ViewArea"
-import WelcomeView from "../components/WelcomeView"
+import Heading from "../components/Heading"
 
 const IndexPage = () => {
-
+  
   const el3Color = 'rgb(161,200,179)';
   const chefSuiteColor = 'rgb(191,200,179)';
   const aboutColor = 'rgb(227,200,179)';
@@ -16,7 +16,6 @@ const IndexPage = () => {
   const [viewName, setViewName] = useState(`index`); //updates @ <Headerbox />
   const [bgColor, setBgColor] = useState(`white`); //updates @ useEffect 
   const [heading, setHeading] = useState(`WELCOME`); //updates @ useEffect
-  // const [viewWrapper, setViewWrapper] = useState([<WelcomeView />]);  //updates @ useEffect
   
   let style = { //Global Styling set here and passed to #app-wrapper 
     transition: `all 0.5s`,
@@ -32,35 +31,32 @@ const IndexPage = () => {
       switch(viewName){
         default:
           setBgColor('white')
-          setHeading('WELCOME')
-          // setViewWrapper(`<WelcomeView />`)
+          setHeading('welcome')
           break;
         case 'EL3 Consultants':
-          setBgColor(el3Color)
-          setHeading(viewName)
+           setBgColor(el3Color)
+          setHeading("EL3 Consultants")
           break;
         case 'ChefSuite':
           setBgColor(chefSuiteColor)
-          setHeading(viewName)
+          setHeading("ChefSuite")
           break;
         case 'About':
           setBgColor(aboutColor)
-          setHeading(viewName)
+          setHeading("About")
           break;
         case 'Contact':
           setBgColor(contactColor)
-          setHeading(viewName)
-          break;
-        case 'index':
-          setHeading('WELCOME')
+          setHeading("Contact")
           break;
     }
-  })
+  }, [viewName])
 
   return(
   <div id="app-wrapper" style={style}>
     <Layout handleView={handleView} />
-    <ViewArea headingText={heading}  />
+    <Heading headingText={heading} />
+    <ViewArea view={viewName} />
   </div>
   
   )
