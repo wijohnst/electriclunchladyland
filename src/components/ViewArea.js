@@ -2,6 +2,9 @@ import React from 'react'
 import './ViewArea.css'
 import El3 from './El3'
 import WelcomeView from './WelcomeView'
+import Chefsuite from './Chefsuite'
+import About from './About'
+import Contact from './Contact'
 
 export default function ViewArea({view}) {
   switch(view){
@@ -23,6 +26,24 @@ export default function ViewArea({view}) {
           <El3 />
         </div>
       )
+    case('ChefSuite'):
+    return(
+      <div className="view-area-wrapper">
+        <Chefsuite />
+      </div>
+    )
+  case('About'):
+  return(
+    <div className="view-area-wrapper">
+      <About />
+    </div>
+  )
+  case('Contact'):
+  return(
+    <div className="view-area-wrapper">
+      <Contact />
+    </div>
+  )
   }
 
 }
