@@ -1,18 +1,29 @@
 import React from 'react'
 import './ViewArea.css'
-import Heading from './Heading.js'
-import ViewHandler from './ViewHandler'
+import El3 from './El3'
+import WelcomeView from './WelcomeView'
 
-export default function ViewArea({headingText}) {
-  return (
-    <div id="view-area-wrapper">
-      <div id="heading-wrapper">
-        <div id="heading">
-          <Heading headingText={headingText} />
+export default function ViewArea({view}) {
+  switch(view){
+    default:
+      return(
+        <div className="view-area-wrapper">
+          <WelcomeView />
         </div>
-      <ViewHandler />
-      </div>
-    </div>
-  )
+      )
+    case('index'):
+      return(
+        <div className="view-area-wrapper">
+          <WelcomeView />
+        </div>
+      )
+    case('EL3 Consultants'):
+      return(
+        <div className="view-area-wrapper">
+          <El3 />
+        </div>
+      )
+  }
+
 }
 
