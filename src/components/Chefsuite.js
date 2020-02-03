@@ -3,8 +3,8 @@ import './Chefsuite.css'
 
 export default function Chefsuite() {
   return (
-    <div id="suite-wrapper">
-      
+    <div id="component-wrapper">
+      ChefSuite
     </div>
   )
 }
