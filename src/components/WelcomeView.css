@@ -1,0 +1,67 @@
+#welcome-banner-wrapper{
+  display: grid;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  grid-template-areas: 
+  "helping restaurants rest easy";
+}
+.banner-div{
+  display: flex;
+  justify-content: center;
+  padding: 2px;
+}
+
+#helping{
+  background-color:rgb(161,200,179);
+  grid-area: helping;
+}
+
+#restaurants{
+  background-color: rgb(191,200,179);
+  grid-area: restaurants;
+}
+
+#rest{
+  background-color: rgb(227,200,179);
+  grid-area: rest;
+}
+
+#easy{
+  background-color: rgb(255,200,179);
+  text-align: left;
+  grid-area: easy;
+}
+
+.card{
+  margin: 5px;
+  border: solid thin black;
+  padding: 5px;
+  background-color: rgba(112,112,122,0.50);
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 5px 5px 10px 0px;
+}
+
+#welcome-info-wrapper{
+  margin: auto;
+}
+
+#welcome-view-wrapper{
+  height: 100vh;
+  background-image: url(../images/welcome_background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#info-text-wrapper{
+  padding: 10px;
+  font-size: 16pt;
+}
+
+#punch-span{
+  text-align: center;
+}
+
+#signature-div{
+  font-family: 'Marck Script', cursive;
+  text-align: center;
+}
