@@ -14,7 +14,7 @@ const HeaderBoxes = ({handleView}) => {
     let boxes = [];
     let colorVal = 161;
     
-    for(let x = 1; x <= (width - 2); x++){
+    for(let x = 1; x <= (width - 1); x++){
       let key = uuid();
       boxes.push(<HeaderBox key={key} color= {colorVal}  index={x} handleView={handleView}/>)
       colorVal = colorVal + (14 + x);

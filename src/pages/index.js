@@ -31,7 +31,7 @@ const IndexPage = () => {
       switch(viewName){
         default:
           setBgColor('white')
-          setHeading('welcome')
+          setHeading('')
           break;
         case 'EL3 Consultants':
            setBgColor(el3Color)
