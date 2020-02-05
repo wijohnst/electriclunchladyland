@@ -132,7 +132,7 @@ export default function WelcomeView(){
           <div id="punch-span"><strong>How to turn obstacles into opportunities.</strong></div><br />
           <p>And seizing opportunity starts with gaining control of your business; brining order and process to the otherwise chaotic world of food and beverage service.</p>
           <p> For information about our end-to-end restaurant consultation and brand resuscitation services, please check out EL3 Consultants above.</p>
-          <p> {`To see how our custom technology tools can put you in contol (and at ease), click ChefSuite to see some of our back and front-of-house applications in action`}</p>
+          <p> {`To learn how our custom technology tools can put you in contol (and at ease), click ChefSuite to see some of our back and front-of-house applications in action`}</p>
           <div id="signature-div">⚡️ -{` Will & Marshall`}</div>
         </animated.div>
       </animated.div>
