@@ -7,7 +7,7 @@ import El3Banner from "./El3Banner"
 export default function El3() {
   return (
     <div id="component-wrapper">
-      <div id="el3-component-wrapper">
+      <div className="card" id="el3-component-wrapper">
         <div id="el3-logo-component-wrapper">
           <El3Logo />
         </div>

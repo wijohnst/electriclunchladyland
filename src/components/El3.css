@@ -1,4 +1,6 @@
 #el3-component-wrapper{
+  margin: auto;
+  max-width: 75vw;
   display: grid;
   grid-template-columns: repeat(10 1fr);
   grid-template-areas: 
