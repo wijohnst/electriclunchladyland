@@ -128,7 +128,7 @@ export default function WelcomeView(){
       <animated.div className="card" id="welcome-info-wrapper" style={infoStyle}>
         <animated.div style={infoTextStyle} id="info-text-wrapper"> 
           <p>Modern hospitality brands face more challenges than ever. We understand the problems that today's restaurants face because we've experinced them first hand. At Electric Lunch Lady Land, we have over 30 years of combined expereince in the food and beverage industry.</p>
-          <p>And what did we learn in that?</p>
+          <p>And what did we learn in that time?</p>
           <div id="punch-span"><strong>How to turn obstacles into opportunities.</strong></div><br />
           <p>And seizing opportunity starts with gaining control of your business; brining order and process to the otherwise chaotic world of food and beverage service.</p>
           <p> For information about our end-to-end restaurant consultation and brand resuscitation services, please check out EL3 Consultants above.</p>
