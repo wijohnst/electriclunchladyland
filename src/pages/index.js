@@ -7,7 +7,7 @@ import ViewArea from "../components/ViewArea"
 import Heading from "../components/Heading"
 
 const IndexPage = () => {
-  
+   
   const el3Color = 'rgb(161,200,179)';
   const chefSuiteColor = 'rgb(191,200,179)';
   const aboutColor = 'rgb(227,200,179)';
