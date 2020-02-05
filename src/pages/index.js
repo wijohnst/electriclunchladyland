@@ -15,7 +15,7 @@ const IndexPage = () => {
 
   const [viewName, setViewName] = useState(`index`); //updates @ <Headerbox />
   const [bgColor, setBgColor] = useState(`white`); //updates @ useEffect 
-  const [heading, setHeading] = useState(`WELCOME`); //updates @ useEffect
+  const [heading, setHeading] = useState(undefined); //updates @ useEffect
   
   let style = { //Global Styling set here and passed to #app-wrapper 
     transition: `all 0.5s`,
