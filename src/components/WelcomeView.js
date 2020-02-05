@@ -130,7 +130,7 @@ export default function WelcomeView(){
           <p>Modern hospitality brands face more challenges than ever. We understand the problems that today's restaurants face because we've experinced them first hand. At Electric Lunch Lady Land, we have over 30 years of combined expereince in the food and beverage industry.</p>
           <p>And what did we learn in that time?</p>
           <div id="punch-span"><strong>How to turn obstacles into opportunities.</strong></div><br />
-          <p>And seizing opportunity starts with gaining control of your business; brining order and process to the otherwise chaotic world of food and beverage service.</p>
+          <p>We believe that having control over your business is the key to seizing opportunity. Its our mission to bring order to the otherwise chaotic world of food and beverage service.</p>
           <p> For information about our end-to-end restaurant consultation and brand resuscitation services, please check out EL3 Consultants above.</p>
           <p> {`To learn how our custom technology tools can put you in contol (and at ease), click ChefSuite to see some of our back and front-of-house applications in action`}</p>
           <div id="signature-div">⚡️ -{` Will & Marshall`}</div>

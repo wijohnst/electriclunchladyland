@@ -1,17 +1,17 @@
 #el3-banner-wrapper{
   padding: 2px;
   display: grid;
-  /* background: lightpink; */
+  /* background: lightpink;  */
   align-items: center;
-  justify-items: stretch;
   grid-template-rows: 1fr 3fr 1fr;
   grid-template-areas: 
-  "e2e e2e"
-  "hospitality ."
-  "specialists .";
+  "e2e"
+  "hospitality"
+  "specialists";
 }
 
 #el3-banner-e2e-wrapper{
+  border-top: solid thin black;
   justify-self: stretch;
   font-size: 2em;
   grid-area: e2e;
@@ -25,6 +25,7 @@
 }
 
 #el3-banner-specialists-wrapper{
+  border-bottom: solid thin black;
   font-size: 2em;
   grid-area: specialists;
 }
