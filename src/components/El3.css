@@ -1,0 +1,15 @@
+#el3-component-wrapper{
+  display: grid;
+  grid-template-columns: repeat(10 1fr);
+  grid-template-areas: 
+  ". logo banner banner banner . . . . . "
+  ". logo . . . . . . . .";
+}
+
+#el3-logo-component-wrapper{
+    grid-area: logo;
+}
+
+#el3-banner-component-wrapper{
+  grid-area: banner;
+}
