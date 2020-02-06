@@ -4,7 +4,7 @@
   /* background: lightpink;  */
   align-items: center;
   grid-template-columns: auto;
-  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
   grid-template-areas: 
   "e2e"
   "hospitality"
@@ -13,7 +13,7 @@
 
 #el3-banner-e2e-wrapper{
   border-top: solid thin black;
-  justify-self: stretch;
+  /* justify-self: stretch; */
   font-size: 2em;
   grid-area: e2e;
 }
