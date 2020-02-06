@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import './El3ServicesCard.css'
+// import './El3ServicesCard.css'
 
 import Service from "./Service.js"
 
