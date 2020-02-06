@@ -1,7 +1,7 @@
 #el3-banner-wrapper{
   padding: 2px;
+  color: #444F48;
   display: grid;
-  /* background: lightpink;  */
   align-items: center;
   grid-template-columns: auto;
   grid-template-rows: 1fr 3fr 1fr;
@@ -12,7 +12,6 @@
 }
 
 #el3-banner-e2e-wrapper{
-  border-top: solid thin black;
   font-size: 2em;
   grid-area: etoe;
 }
@@ -25,7 +24,10 @@
 }
 
 #el3-banner-specialists-wrapper{
-  border-bottom: solid thin black;
   font-size: 2em;
   grid-area: specialists;
+}
+
+#hospitality-text{
+  text-shadow: 1px 3px 6px #707070;
 }
