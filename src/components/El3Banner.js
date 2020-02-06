@@ -8,7 +8,7 @@ export default function El3Banner() {
         <span>end-to-end</span>
       </div>
       <div id="el3-banner-hospitality-wrapper">
-        <span>hospitality</span>
+        <span id="hospitality-text">hospitality</span>
       </div>
       <div id="el3-banner-specialists-wrapper">
         <span>specialists</span>

@@ -1,0 +1,21 @@
+#el3-services-card{
+  background-color: rgb(255,255,255);
+  border-color: #444F48;
+  box-shadow: none;
+  display: grid;
+  grid-gap: 10px;
+  justify-items: center;
+  text-align: center;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "ban ban ban"
+  "ser1 . ser2"
+  "ser3 . ser4"
+  "ser5 . ser6"
+  "ser7 . ser8";
+}
+
+#services_banner{
+  grid-area: ban;
+}

@@ -1,11 +1,12 @@
 #el3-component-wrapper{
   margin: auto;
+  grid-gap: 2px;
   max-width: 75vw;
   display: grid;
-  grid-template-columns: repeat(10 1fr);
   grid-template-areas: 
-  ". logo banner banner banner . . . . . "
-  ". logo . . . . . . . .";
+  "logo banner ."
+  ". cop cop"
+  " . services ."
 }
 
 #el3-logo-component-wrapper{
@@ -14,4 +15,14 @@
 
 #el3-banner-component-wrapper{
   grid-area: banner;
+}
+
+#el3-component-copy-wrapper{
+  margin-top: 15px;
+  text-align: left;
+  grid-area: cop;
+}
+
+#el3-services-card-component-wrapper{
+  grid-area: services;
 }
