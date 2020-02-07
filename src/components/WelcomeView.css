@@ -1,5 +1,6 @@
 #welcome-banner-wrapper{
   display: grid;
+  max-width: 75vw;
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
   grid-template-areas: 
