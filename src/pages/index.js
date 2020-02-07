@@ -6,6 +6,8 @@ import Layout from "../components/layout"
 import ViewArea from "../components/ViewArea"
 import Heading from "../components/Heading"
 
+import MobileLayout from "../components/MobileLayout"
+
 const IndexPage = () => {
    
   const el3Color = 'rgb(161,200,179)';
@@ -17,6 +19,8 @@ const IndexPage = () => {
   const [bgColor, setBgColor] = useState(`white`); //updates @ useEffect 
   const [heading, setHeading] = useState(undefined); //updates @ useEffect
   
+  const [isMobile, setIsMobile] = useState(undefined);
+
   let style = { //Global Styling set here and passed to #app-wrapper 
     transition: `all 0.5s`,
     backgroundColor: `${bgColor}`
@@ -25,6 +29,13 @@ const IndexPage = () => {
   const handleView = (viewName) =>{ //From user input @ <HeaderBox />
     setViewName(viewName);
   }
+  useEffect(() => {
+    if(window.innerWidth < 500){
+      setIsMobile(true);
+    }else{
+      setIsMobile(false);
+    }
+  }, [])
   
   useEffect( () =>{ //bgColor consumed as styled component, heading consumed @ <Heading />
 
@@ -52,6 +63,13 @@ const IndexPage = () => {
     }
   }, [viewName])
 
+ if(isMobile){
+   return(
+     <div id="app-wrapper" style={style}>
+       <MobileLayout />
+     </div>
+   )
+ }
   return(
   <div id="app-wrapper" style={style}>
     <Layout handleView={handleView} />
