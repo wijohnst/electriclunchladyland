@@ -62,7 +62,7 @@ const HeaderBox = ({color, index, handleView}) => {
   }
   return (
     <div role="button" className="header-box" style={style} onMouseOver={setHoverTrue} onFocus={setHoverTrue} onMouseLeave={setHoverFalse} onClick={ () => handleClick({text})} onKeyPress={ () => handleClick({text})} tabIndex={0} > 
-      {text}
+      <i>{text.toUpperCase()}</i>
     </div>
   );
 }
