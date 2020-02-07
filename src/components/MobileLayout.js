@@ -14,8 +14,13 @@ export default function MobileLayout() {
   //STYLING
 
   const MobileBannerWrapper = styled.div`
+    background-color: lightpink;
     display : flex;
     flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+    height: 75vh;
+    width: 100vw;
   `
 
   const MobileBanner = styled.h2`
@@ -24,7 +29,7 @@ export default function MobileLayout() {
   `
 
   const EmojiWrapper = styled.div`
-    /* background-color: lightpink; */
+    background-color: lightpink;
     font-size: 40px;
     text-align: center;
   `
