@@ -6,7 +6,7 @@ import PrintLogo from "./printLogo";
 
 
 const HeaderBoxes = ({handleView}) => {
-  
+
   const [boxes, setBoxes] = useState(0);
 
   useEffect( () =>{
@@ -16,19 +16,20 @@ const HeaderBoxes = ({handleView}) => {
     let width = Math.floor(window.innerWidth/150);
     let boxes = [];
     let colorVal = 161;
-    
+
     for(let x = 1; x <= (width - 1
       ); x++){
       let key = uuid();
       boxes.push(<HeaderBox key={key} color= {colorVal}  index={x} handleView={handleView}/>)
       colorVal = colorVal + (14 + x);
-    
+
     setBoxes(boxes);
-  
-  }}, [handleView]) 
+
+  }}, [handleView])
   // let boxes = displayDimensions();
   // window.addEventListener("resize", displayDimensions.bind());
-  
+
+  if({boxes})
   return (
     <div id="boxes-wrapper">
       <PrintLogo />
@@ -36,7 +37,7 @@ const HeaderBoxes = ({handleView}) => {
     </div>
   );
 
-  
+
 }
 
 export default HeaderBoxes;
