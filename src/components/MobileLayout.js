@@ -10,14 +10,12 @@ export default function MobileLayout() {
 
   //DECLARATIONS
   const [screenWidth, setScreenWidth] = useState(undefined);
-  const [isUnderConstruction, setUnderConstruction] = useState(false);
+  const [isUnderConstruction, setUnderConstruction] = useState(true);
 
   //LIFECYCLE
   useEffect(() => {
     setScreenWidth(window.innerWidth);
   }, [])
-
-  //STYLING
 
   const MobileBannerWrapper = styled.div`
     background-color: lightpink;
@@ -30,7 +28,7 @@ export default function MobileLayout() {
   `
 
   const MobileBanner = styled.h2`
-    max-width: 75%;
+    min-width: ${screenWidth};
     padding: 20px;
   `
 
@@ -53,6 +51,7 @@ export default function MobileLayout() {
   align-items: center;
   background-color: rgba(99, 112, 129, 1);
   height: 100vh;
+  width: 100vw;
   font-family: "Montserrat", sans-serif;
 `
 
